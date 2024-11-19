@@ -58,16 +58,12 @@ def process_vertex_late(v):
 def process_vertex_early(v):
     print("process early::", v)
 
-def process_edge(x,y):
+def process_edge(v,y):
     print("process edge::", v, " <-> ", y)
 
 def bfs(g, start_val):
 
     queue = [] # Queue of vertices to visit
-
-    global v # Reference of current vertice value (int)
-    global y # Reference of Successor vertice value (int)
-    global temp_edge
 
     # To begin
     queue.append(start_val)
