@@ -6,6 +6,7 @@ class TrieNode:
 def initialize_trie():
     return TrieNode()
 
+# Time Complexity: O(n), n = length of the word
 def insert_word(t, word):
     if word != "":
         index = ord(word[0]) - ord('a')
