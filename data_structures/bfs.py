@@ -61,6 +61,7 @@ def process_vertex_early(v):
 def process_edge(v,y):
     print("process edge::", v, " <-> ", y)
 
+# Time Complexity: O(n+2m) for undirected graphs, O(n+m) for directed graphs
 def bfs(g, start_val):
 
     queue = [] # Queue of vertices to visit
@@ -94,6 +95,16 @@ def bfs(g, start_val):
         process_vertex_late(v)
 
 
+# Time complexity: O(number of total vertices in the graph)
+def find_path(start, end, parents):
+    if start == end or end == -1:
+        print("path:: ", start)
+        return
+    else:
+        find_path(start, parents[end], parents)
+        print("path:: ", end)
+        return
+
 
 # Runner
 g = None
@@ -116,3 +127,4 @@ discovered=[False]*(g.total_vertices + 1)
 processed=[False]*(g.total_vertices + 1)
 parent=[-1]*(g.total_vertices +1)
 bfs(g, 1)
+find_path(5,6,parent)
