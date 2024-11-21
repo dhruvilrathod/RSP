@@ -1,7 +1,3 @@
-# Search for a minimum spanning tree in a graph
-# Useful for a dense graph
-# Greedy
-
 class Node:
     def __init__(self,val,weight=None) -> None:
         self.val = val
@@ -38,33 +34,36 @@ def insert_graph(g,v1,v2,directed,weight=None):
     return g
 
 
+# This is almost same function as the prims algorithm
+# Only change is: while adding the candidate vertices, we dont just compare current weight with distance, but we check current weight + parent distance with the stored distance
 # Time Complexity: O(m * 2n) = O(mn)
-def prim(g, start):
+def dijkstra(g, start):
     
     intree=[False]*g.max_nodes
     distance=[float('inf')]*g.max_nodes
     parent=[-1]*g.max_nodes
     temp_dist = float('inf')
-    total_mst_weight=0
+    total_travel_weight=0
 
     v=start
     distance[start]=0
 
     while not intree[v]:
+        
         intree[v]=True
 
         temp = g.vertices[v]
 
 
         if (v != start):
-            print("added edge: ", parent[v], '-', v)
-            total_mst_weight+=temp_dist
+            print("Distance from", start, ":", temp_dist, " and path:: ",  parent[v], '-', v)
+            total_travel_weight+=temp_dist
 
         # This will store every possible candidate element with their weight and parent
         while temp != None:
             candidate = temp.val
-            if temp.weight < distance[candidate] and not intree[candidate]:
-                distance[candidate] = temp.weight
+            if distance[v] + temp.weight < distance[candidate]: # CHANGE: we compare the weight + distance till parent to what is stored in distance for this vertex, no need to check if that is already in tree.
+                distance[candidate] = distance[v] + temp.weight
                 parent[candidate] = v
             temp = temp.next
         
@@ -77,7 +76,7 @@ def prim(g, start):
                 v=i
 
         
-    return total_mst_weight
+    return total_travel_weight
 
 g = initialize_graph(10,False)
 # g = insert_graph(g,1,2,False, 1)
@@ -98,5 +97,6 @@ g = insert_graph(g,1,2,False, 2)
 g = insert_graph(g,2,3,False, 8)
 g = insert_graph(g,3,4,False, 9)
 
-total = prim(g, 1)
-print("Total weight:", total)
+print("Finding shortest paths to all nodes from 1:")
+total = dijkstra(g, 1)
+print("Total distance to travel:", total)
