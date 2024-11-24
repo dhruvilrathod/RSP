@@ -1,0 +1,12 @@
+Update: 25/11/2024
+Hours: 32-34 (Approx.)
+Readings: 
+- ADM (3rd edition) chapter 11,12,13
+- CTCI: Sections VII, VIII, and interview questions beyond this
+Implementation: 
+- Data structures mentioned in role promotion requirements
+Other:
+- Resume Draft
+- Monday and Sunday seminar
+- Interview Preparation Grid Table (CTCI - page 32)
+Promotion: Promoted to Novice

@@ -89,7 +89,7 @@ def to_edge_list(g):
         return edge_list
 
 
-# Time Complexity: O(m * 2n) = O(mn)
+# Time Complexity: O(m log m)
 def kruskal(g):
     s = initialize_union_find(g.total_vertices)
     edges = to_edge_list(g)
