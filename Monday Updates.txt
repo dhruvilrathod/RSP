@@ -10,3 +10,16 @@ Other:
 - Monday and Sunday seminar
 - Interview Preparation Grid Table (CTCI - page 32)
 Promotion: Promoted to Novice
+
+Update: 02/12/2024
+Hours: 25h 20m
+Leetcode: 
+- Easy: 4 (43 minutes)
+- Medium: 7 (12 hours)
+- Hard: 1 (2 hours 20 minues)
+Mock Interview:
+- 1 give: 1h + 30 minutes (Prep, interview and feedback)
+- 1 recevie: 1h (interview and feedback)
+Readings: (8 hours approx.)
+- revisited P vs NP problems, watched lectures to understand
+- revisited graphs algorithms (prims and Kruskals)
