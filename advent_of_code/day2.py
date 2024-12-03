@@ -1050,8 +1050,41 @@ def safe_reports(reports):
         i+=1
     return count
 
-# ans1 = safe_reports(reports1)
-# print(ans1)
+def is_safe(report):
+    lenr = len(report)
+    is_increasing = False
+    for i in range(lenr-1):
+        diff = report[i+1]-report[i]
+        if abs(diff) < 1 or abs(diff) > 3:
+            return False
+        if i == 0:
+            is_increasing = diff > 0
+        if (is_increasing and diff < 0) or (not is_increasing and diff > 0):
+            return False
+    return True
+
+def problem_dampener(reports):
+    count = 0
+    rp = prepare_data(reports)
+    for r in rp:
+        if is_safe(r):
+            count+=1
+        else:
+            i = 0
+            while i < len(r):
+                temp = r[:i]+r[i+1:]
+                if is_safe(temp):
+                    count+=1
+                    break
+                i+=1
+    return count
+
 
 ans = safe_reports(reports)
 print(ans)
+
+ans1 = problem_dampener(reports)
+print(ans1)
+
+# ans = problem_dampener(reports1)
+# print(ans)
