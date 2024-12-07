@@ -1442,6 +1442,40 @@ def parse_rules(rules, update):
     return True
 
 
+def find_middle_page(update):
+    mid_index = len(update) // 2
+    return update[mid_index]
+
+
+def reorder_update(order_rules, update):
+    dependencies = {page: [] for page in update}
+    for rule in order_rules:
+        x, y = map(int, rule.split('|'))
+        if x in update and y in update:
+            dependencies[y].append(x)
+
+    ordered = []
+    visited = set()
+    visiting = set()
+
+    def dfs(page):
+        if page in visiting:
+            return
+        if page in visited:
+            return
+        visiting.add(page)
+        for dep in dependencies[page]:
+            dfs(dep)
+        visiting.remove(page)
+        visited.add(page)
+        ordered.append(page)
+
+    for page in update:
+        if page not in visited:
+            dfs(page)
+    
+    return ordered[::-1]
+
 
 def total_valid_updates(updates, rules):
     count = 0
@@ -1451,11 +1485,26 @@ def total_valid_updates(updates, rules):
             count += int(u[mid])
     return count
 
+def total_fixed_valid_updates(updates, rules):
+    count = 0
+    for u in updates:
+        if not parse_rules(rules,u):
+            u = reorder_update(rules, u)
+            mid = int(len(u)/2)
+            count += int(u[mid])
+    return count
+
 def get_valid_update_middle_sum(text):
     rules, updates = extract_rules(text)
     total = total_valid_updates(updates, rules)
     return total
 
+def get_fixed_update_middle_sum(text):
+    rules, updates = extract_rules(text)
+    total = total_fixed_valid_updates(updates, rules)
+    return total
 
 s = get_valid_update_middle_sum(text)
-print(s)
+f = get_fixed_update_middle_sum(text)
+print("valid: ", s)
+print("fixed: ", f)
