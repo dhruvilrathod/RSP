@@ -23,3 +23,17 @@ Mock Interview:
 Readings: (8 hours approx.)
 - revisited P vs NP problems, watched lectures to understand
 - revisited graphs algorithms (prims and Kruskals)
+
+
+Update: 09/12/2024
+Hours: 43h 10m
+Leetcode: (7h 10m)
+- Easy: 1 (6 minutes)
+- Medium: 8 (5 hours 41 minutes)
+- Hard: 1 (1 hour 22 minutes)
+Mock interview: (5h)
+- 2 give and take (4h) + feedback + preparation (1h)
+Advent of Code: (13h - not sure if this counts towards hours :) but anyway i'm putting this here)
+- Till day 6.
+Freelancing website (As a part of work experience requirement): (18h)
+- hopefully should go live by next week
