@@ -90,6 +90,34 @@ def in_order_traversal(tree, process_fn):
         process_fn(tree)
         in_order_traversal(tree.right, process_fn)
 
+def post_order_traversal(tree, process_fn):
+    if tree != None:
+        post_order_traversal(tree.left, process_fn)
+        post_order_traversal(tree.right, process_fn)
+        process_fn(tree)
+
+
+def post_order_traversal_iterative(tree, process_fn):
+    if tree != None:
+        stack = [tree]
+        ans = []
+        visited = set()
+        while len(stack) > 0:
+            top = stack[-1]
+            print(top.val)
+            has_children = False
+            if top.right and not top.right in visited:
+                has_children = True
+                stack.append(top.right)
+            if top.left and not top.left in visited:
+                has_children = True
+                stack.append(top.left)
+            if not has_children:
+                leaf = stack.pop(-1)
+                ans.append(leaf.val)
+                visited.add(leaf)
+        return ans
+
 tree = create_binary_tree(5)
 tree = insert_tree(tree, 3)
 tree = insert_tree(tree, 7)
@@ -98,6 +126,7 @@ tree = insert_tree(tree, 4)
 tree = insert_tree(tree, 6)
 tree = insert_tree(tree, 8)
 tree = delete_tree(tree, 4)
-in_order_traversal(tree, lambda x: print("processing:: ", x.val))
+# in_order_traversal(tree, lambda x: print("processing:: ", x.val))
+post_order_traversal_iterative(tree, lambda x: print("processing:: ", x.val))
 print("Searchiing for 4:", search_tree(tree, 4))
 print("Searchiing for 14:", search_tree(tree, 14))
