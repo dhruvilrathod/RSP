@@ -37,3 +37,18 @@ Advent of Code: (13h - not sure if this counts towards hours :) but anyway i'm p
 - Till day 6.
 Freelancing website (As a part of work experience requirement): (18h)
 - hopefully should go live by next week
+
+
+
+Update: 16/12/2024
+Hours: 38h
+Leetcode: (8h)
+- Easy: 2 (30m)
+- Medium: 4 (5h)
+- Hard: 1 (2h 30m)
+Mock interview: (5h)
+- 2 give and take (4h) + feedback + preparation (1h)
+Advent of Code: (18h)
+- Till day 15 part 1.
+Freelancing website (As a part of work experience requirement): (7h)
+- few changes from client, sent to compliance team for review
