@@ -65,3 +65,25 @@ Advent of Code: (21h)
 - Till day 20 part 2. (few complicated ones took too much time)
 Sunday seminar: 2h
 Resume refactoring: 2h
+
+
+Update: 06/01/2025
+Hours: 40+ Hours (Including holidays)
+Leetcode: (7h 30m)
+- Easy: 1 (15m)
+- Medium: 4 (3h 10m)
+- Hard: 2 (4h)
+Mock interview: (1h 30m)
+- 1 give + feedback + preparation (1h 30m)
+Portfolio Website: (30+ hrs over holidays)
+
+
+Update: 13/01/2025
+Hours: 12h 15m (as i was working fulltime during the week - will cover up in this week)
+Leetcode: 5h 15m
+- Medium: 2 (4h)
+- Easy: 2 (1h 15m - medium easy)
+Mock interview: (4h)
+- 1 take + 2 give + feedback + preparation (4h)
+Portfolio (3h):
+- Refactoring, Added contact me work around (3h)
