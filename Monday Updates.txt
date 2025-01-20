@@ -87,3 +87,18 @@ Mock interview: (4h)
 - 1 take + 2 give + feedback + preparation (4h)
 Portfolio (3h):
 - Refactoring, Added contact me work around (3h)
+
+
+
+Update: 20/01/2025
+Hours: 24h
+Videos on solving different types of DP (4h)
+Leetcode: 13h
+- Medium: 4 (5h)
+- Hard: 6 (8h)
+Mock interview: 2h
+- 1 take + 1 give + feedback + preparation (2h)
+Linked In (3h):
+- Refactoring about section, listing all the projects
+OA: (2h)
+- SIG OA - practice and test
