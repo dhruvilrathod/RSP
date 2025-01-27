@@ -102,3 +102,18 @@ Linked In (3h):
 - Refactoring about section, listing all the projects
 OA: (2h)
 - SIG OA - practice and test
+
+
+
+Update: 27/01/2025
+Hours: 26h
+Revisiting approaches to solve DP (6h)
+Leetcode: (13h 20m)
+- Easy: 1 (20m)
+- Medium: 4 (5h)
+- Hard: 3 (8h) (majorly on DP)
+Mock interview: 2h
+- 1 take + 1 give + feedback + preparation (2h)
+Sunday Seminar: (2h)
+OA: (2h)
+- SIG OA (For grad 2026) - practice and test
