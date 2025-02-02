@@ -117,3 +117,16 @@ Mock interview: 2h
 Sunday Seminar: (2h)
 OA: (2h)
 - SIG OA (For grad 2026) - practice and test
+
+Update: 03/02/2025
+Hours: 24h 30m
+CPC x RSP Completition: 8h (we won the 3rd place in student-only teams)
+Revisiting Graph Theory: bipartite graph and graph coloring (6h)
+Leetcode: (6h 30m)
+- Easy: 2 (30m)
+- Medium: 5 (3h)
+- Hard: 1 (3h)
+Mock interview: 2h
+- 1 take + 1 give + feedback + preparation (2h)
+Sunday Seminar: 2h
+
