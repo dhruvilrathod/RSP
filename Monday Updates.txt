@@ -130,3 +130,22 @@ Mock interview: 2h
 - 1 take + 1 give + feedback + preparation (2h)
 Sunday Seminar: 2h
 
+Update: 10/02/2025
+Hours: 23h 30m
+Revisiting OOP specific problems: 7h 30m
+Leetcode: 6h
+- Easy: 3
+- Medium: 4
+- Hard: 1
+2 Mocks: 5h (1 in-person at Mawson Lakes)
+Sunday Seminar: 2h
+Job applications + Linkedin connections (for referral): 3h 
+
+
+Update: 17/02/2025
+Hours: 24h 30m
+Leetcode: 7
+Mock: 1
+Learning DP (Digit DP)
+
+
